@@ -1,4 +1,4 @@
-# NodeBattleship
+# BattleShip
 
 Multiplayer classic Battleship in Node, Express, Socket.io, Canvas...
 
@@ -6,7 +6,7 @@ Multiplayer classic Battleship in Node, Express, Socket.io, Canvas...
 
 Step 1: Make sure to have Node >= 8 and yarn installed locally then download/clone.
 ```
-git clone
+git clone https://github.com/SakoMe/battleship.git
 ```
 Step 2: Install dependencies.
 ```
