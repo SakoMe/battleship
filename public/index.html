@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>BattleShip Game</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+
+    <div id="disconnected">
+      <div class="row centered">
+        <div class="four columns offset-by-four">
+          <div class="alert">
+            <p>Not connected to server.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="waiting-room">
+      <div class="row centered">
+        <div class="four columns offset-by-four">
+          <div class="card">
+            <div class="card-title">Welcome</div>
+            <div class="card-desc">
+              <p>You are connected to the server</p>
+              <p>Waiting for another player to join the room to start the game!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="game">
+      <div class="row">
+        <div class="u-max-full-width">
+          <h3 class="heading-text">Game Room # <span id="room-number"></span></h3>
+        </div>
+      </div>
+      <div class="row centered">
+        <div class="five columns">
+          <h4>Your Map</h4>
+          <canvas id="player-grid1" width="380" height="380"></canvas>
+        </div>
+        <div class="two columns middle-message">
+          <h6 class="turn" id="turn-status"></h6>
+        </div>
+        <div class="five columns">
+          <h4>Opponent's Map</h4>
+          <canvas id="player-grid2" width="380" height="380"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="u-max-full-width" id="messages-list">
+          <ul class="no-bullet" id="messages"></ul>
+        </div>
+      </div>
+
+      <form id="message-form">
+        <div class="row">
+          <div class="u-max-full-width">
+            <input class="u-full-width" placeholder="Enter your message here..." type="text" autocomplete="off" id="message">
+          </div>
+          <button class="u-pull-right">Send Message</button>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/client.js"></script>
+</body>
+
+</html>

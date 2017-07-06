@@ -1,0 +1,19 @@
+{
+  "name": "BattleShip-Node-Socket",
+  "version": "1.0.0",
+  "description": "Classic BattleShip game in Node, Express, Socket.io, Canvas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.1.0"
+  },
+  "author": "Sarkis Melkonyan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "html-entities": "^1.2.1",
+    "socket.io": "1.3.5"
+  }
+}
