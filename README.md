@@ -17,3 +17,6 @@ Step 3: Start server.
 node server.js
 ```
 Step 4: Open http://localhost:3000/ in two separate browsers...
+
+## Or check out the live link below
+https://still-meadow-42947.herokuapp.com/
