@@ -73,7 +73,7 @@ const Game = (() => {
   // Init a game...
   const initGame = () => {
 
-    let gameStatus = GameStatus.inProgress;
+    gameStatus = GameStatus.inProgress;
 
     // Create the empty grids for both...
     grid[0] = {
